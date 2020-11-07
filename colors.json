@@ -1,0 +1,390 @@
+{
+    "hex": {
+        "shades": {
+            "shade00": "#000000",
+            "shade05": "#0c0c0c",
+            "shade10": "#191919",
+            "shade15": "#262626",
+            "shade20": "#333333",
+            "shade25": "#3f3f3f",
+            "shade30": "#4c4c4c",
+            "shade35": "#595959",
+            "shade40": "#666666",
+            "shade45": "#727272",
+            "shade50": "#7f7f7f",
+            "shade55": "#8c8c8c",
+            "shade60": "#999999",
+            "shade65": "#a5a5a5",
+            "shade70": "#b2b2b2",
+            "shade75": "#bfbfbf",
+            "shade80": "#cccccc",
+            "shade85": "#d8d8d8",
+            "shade90": "#e5e5e5",
+            "shade95": "#f2f2f2"
+        },
+        "ansi": {
+            "black": "#000000",
+            "light_black": "#b2b2b2",
+            "red": "#b31313",
+            "light_red": "#d71717",
+            "green": "#0e806d",
+            "light_green": "#12a58c",
+            "yellow": "#fbd103",
+            "light_yellow": "#ffd400",
+            "blue": "#0e3f80",
+            "light_blue": "#1458b7",
+            "magenta": "#9013b3",
+            "light_magenta": "#ae17d7",
+            "cyan": "#0e6980",
+            "light_cyan": "#107c97",
+            "white": "#f2f2f2",
+            "light_white": "#ffffff"
+        },
+        "ansi_enum": {
+            "color0": "#000000",
+            "color8": "#b2b2b2",
+            "color1": "#b31313",
+            "color9": "#d71717",
+            "color2": "#0e806d",
+            "color10": "#12a58c",
+            "color3": "#fbd103",
+            "color11": "#ffd400",
+            "color4": "#0e3f80",
+            "color12": "#1458b7",
+            "color5": "#9013b3",
+            "color13": "#ae17d7",
+            "color6": "#0e6980",
+            "color14": "#107c97",
+            "color7": "#f2f2f2",
+            "color15": "#ffffff"
+        }
+    },
+    "8bit_hex": {
+        "shades": {
+            "shade00": [
+                0,
+                "#000000",
+                "#000000"
+            ],
+            "shade05": [
+                232,
+                "#080808",
+                "#0c0c0c"
+            ],
+            "shade10": [
+                234,
+                "#1c1c1c",
+                "#191919"
+            ],
+            "shade15": [
+                235,
+                "#262626",
+                "#262626"
+            ],
+            "shade20": [
+                236,
+                "#303030",
+                "#333333"
+            ],
+            "shade25": [
+                237,
+                "#3a3a3a",
+                "#3f3f3f"
+            ],
+            "shade30": [
+                239,
+                "#4e4e4e",
+                "#4c4c4c"
+            ],
+            "shade35": [
+                240,
+                "#585858",
+                "#595959"
+            ],
+            "shade40": [
+                241,
+                "#626262",
+                "#666666"
+            ],
+            "shade45": [
+                243,
+                "#767676",
+                "#727272"
+            ],
+            "shade50": [
+                8,
+                "#808080",
+                "#7f7f7f"
+            ],
+            "shade55": [
+                245,
+                "#8a8a8a",
+                "#8c8c8c"
+            ],
+            "shade60": [
+                246,
+                "#949494",
+                "#999999"
+            ],
+            "shade65": [
+                248,
+                "#a8a8a8",
+                "#a5a5a5"
+            ],
+            "shade70": [
+                249,
+                "#b2b2b2",
+                "#b2b2b2"
+            ],
+            "shade75": [
+                7,
+                "#c0c0c0",
+                "#bfbfbf"
+            ],
+            "shade80": [
+                252,
+                "#d0d0d0",
+                "#cccccc"
+            ],
+            "shade85": [
+                188,
+                "#d7d7d7",
+                "#d8d8d8"
+            ],
+            "shade90": [
+                254,
+                "#e4e4e4",
+                "#e5e5e5"
+            ],
+            "shade95": [
+                255,
+                "#eeeeee",
+                "#f2f2f2"
+            ]
+        },
+        "ansi": {
+            "black": [
+                0,
+                "#000000",
+                "#000000"
+            ],
+            "light_black": [
+                249,
+                "#b2b2b2",
+                "#b2b2b2"
+            ],
+            "red": [
+                124,
+                "#af0000",
+                "#b31313"
+            ],
+            "light_red": [
+                160,
+                "#d70000",
+                "#d71717"
+            ],
+            "green": [
+                29,
+                "#00875f",
+                "#0e806d"
+            ],
+            "light_green": [
+                36,
+                "#00af87",
+                "#12a58c"
+            ],
+            "yellow": [
+                220,
+                "#ffd700",
+                "#fbd103"
+            ],
+            "light_yellow": [
+                220,
+                "#ffd700",
+                "#ffd400"
+            ],
+            "blue": [
+                24,
+                "#005f87",
+                "#0e3f80"
+            ],
+            "light_blue": [
+                25,
+                "#005faf",
+                "#1458b7"
+            ],
+            "magenta": [
+                91,
+                "#8700af",
+                "#9013b3"
+            ],
+            "light_magenta": [
+                128,
+                "#af00d7",
+                "#ae17d7"
+            ],
+            "cyan": [
+                24,
+                "#005f87",
+                "#0e6980"
+            ],
+            "light_cyan": [
+                30,
+                "#008787",
+                "#107c97"
+            ],
+            "white": [
+                255,
+                "#eeeeee",
+                "#f2f2f2"
+            ],
+            "light_white": [
+                15,
+                "#ffffff",
+                "#ffffff"
+            ]
+        },
+        "ansi_enum": {
+            "color0": [
+                0,
+                "#000000",
+                "#000000"
+            ],
+            "color8": [
+                249,
+                "#b2b2b2",
+                "#b2b2b2"
+            ],
+            "color1": [
+                124,
+                "#af0000",
+                "#b31313"
+            ],
+            "color9": [
+                160,
+                "#d70000",
+                "#d71717"
+            ],
+            "color2": [
+                29,
+                "#00875f",
+                "#0e806d"
+            ],
+            "color10": [
+                36,
+                "#00af87",
+                "#12a58c"
+            ],
+            "color3": [
+                220,
+                "#ffd700",
+                "#fbd103"
+            ],
+            "color11": [
+                220,
+                "#ffd700",
+                "#ffd400"
+            ],
+            "color4": [
+                24,
+                "#005f87",
+                "#0e3f80"
+            ],
+            "color12": [
+                25,
+                "#005faf",
+                "#1458b7"
+            ],
+            "color5": [
+                91,
+                "#8700af",
+                "#9013b3"
+            ],
+            "color13": [
+                128,
+                "#af00d7",
+                "#ae17d7"
+            ],
+            "color6": [
+                24,
+                "#005f87",
+                "#0e6980"
+            ],
+            "color14": [
+                30,
+                "#008787",
+                "#107c97"
+            ],
+            "color7": [
+                255,
+                "#eeeeee",
+                "#f2f2f2"
+            ],
+            "color15": [
+                15,
+                "#ffffff",
+                "#ffffff"
+            ]
+        }
+    },
+    "8bit": {
+        "shades": {
+            "shade00": 0,
+            "shade05": 232,
+            "shade10": 234,
+            "shade15": 235,
+            "shade20": 236,
+            "shade25": 237,
+            "shade30": 239,
+            "shade35": 240,
+            "shade40": 241,
+            "shade45": 243,
+            "shade50": 8,
+            "shade55": 245,
+            "shade60": 246,
+            "shade65": 248,
+            "shade70": 249,
+            "shade75": 7,
+            "shade80": 252,
+            "shade85": 188,
+            "shade90": 254,
+            "shade95": 255
+        },
+        "ansi": {
+            "black": 0,
+            "light_black": 249,
+            "red": 124,
+            "light_red": 160,
+            "green": 29,
+            "light_green": 36,
+            "yellow": 220,
+            "light_yellow": 220,
+            "blue": 24,
+            "light_blue": 25,
+            "magenta": 91,
+            "light_magenta": 128,
+            "cyan": 24,
+            "light_cyan": 30,
+            "white": 255,
+            "light_white": 15
+        },
+        "ansi_enum": {
+            "color0": 0,
+            "color8": 249,
+            "color1": 124,
+            "color9": 160,
+            "color2": 29,
+            "color10": 36,
+            "color3": 220,
+            "color11": 220,
+            "color4": 24,
+            "color12": 25,
+            "color5": 91,
+            "color13": 128,
+            "color6": 24,
+            "color14": 30,
+            "color7": 255,
+            "color15": 15
+        }
+    }
+}

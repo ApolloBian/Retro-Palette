@@ -11,6 +11,7 @@ A few suggestions:
 # used colors
 from colorutils import Color
 import colorsys
+import json
 
 def hls_to_hsl_literal(h, l, s):
     h = int(h * 360)
@@ -41,4 +42,24 @@ def hsl_to_hex(hsl_literal):
 
 def hex_to_hsl(hex_literal):
     pass
+
+
+def color_distance(hex1, hex2):
+    # ref: https://en.wikipedia.org/wiki/Color_difference#sRGB
+    (r1, g1, b1), (r2, g2, b2) = Color(hex=hex1).rgb, Color(hex=hex2).rgb
+
+    r_ = 0.5 * (r1+r2)
+    dr = r1-r2
+    dg = g1-g2
+    db = b1-b2
+    dc = (2 + r_/256) * dr ** 2 + 4 * dg ** 2 + (2 + (255 - r_) / 256) * db ** 2
+    dc **= 0.5
+    return dc
+
+def approx_ansi(hex_color):
+    c1 = hex_color
+    sorted_colors = sorted(json.load(open('./ansi-256color.json')),
+                           key=lambda x: color_distance(c1, x['hexString']))
+    selected = sorted_colors[0]
+    return [selected['colorId'], selected['hexString']]
 
