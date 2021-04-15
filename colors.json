@@ -40,6 +40,9 @@
             "white": "#f2f2f2",
             "light_white": "#ffffff"
         },
+        "ansi_extended": {
+            "orange": "#f4803d"
+        },
         "ansi_enum": {
             "color0": "#000000",
             "color8": "#b2b2b2",
@@ -244,6 +247,13 @@
                 "#ffffff"
             ]
         },
+        "ansi_extended": {
+            "orange": [
+                209,
+                "#ff875f",
+                "#f4803d"
+            ]
+        },
         "ansi_enum": {
             "color0": [
                 0,
@@ -367,6 +377,9 @@
             "light_cyan": 30,
             "white": 255,
             "light_white": 15
+        },
+        "ansi_extended": {
+            "orange": 209
         },
         "ansi_enum": {
             "color0": 0,

@@ -43,6 +43,10 @@ ansi_hsl = {
     "light_white": "hsl(0, 0%, 100%)"
 }
 
+ansi_extended = {
+    "orange": "hsl(22, 90%, 60%)",
+}
+
 colors = defaultdict(lambda: defaultdict(dict))
 
 
@@ -61,6 +65,10 @@ colors['hex']['shades'] = shades
 # generate hex color
 for name, hslval in ansi_hsl.items():
     colors['hex']['ansi'][name] = hsl_to_hex(hslval)
+
+for name, hslval in ansi_extended.items():
+    colors['hex']['ansi_extended'][name] = hsl_to_hex(hslval)
+
 
 colors['hex']['ansi_enum'] = {ansi_alias[k]: v for k,
                               v in colors['hex']['ansi'].items()}
