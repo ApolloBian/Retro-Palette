@@ -43,7 +43,7 @@ ansi_hsl = {
     "light_white": "hsl(0, 0%, 100%)"
 }
 
-ansi_extended = {
+extended = {
     "orange": "hsl(22, 90%, 60%)",
 }
 
@@ -66,8 +66,8 @@ colors['hex']['shades'] = shades
 for name, hslval in ansi_hsl.items():
     colors['hex']['ansi'][name] = hsl_to_hex(hslval)
 
-for name, hslval in ansi_extended.items():
-    colors['hex']['ansi_extended'][name] = hsl_to_hex(hslval)
+for name, hslval in extended.items():
+    colors['hex']['extended'][name] = hsl_to_hex(hslval)
 
 
 colors['hex']['ansi_enum'] = {ansi_alias[k]: v for k,
@@ -75,10 +75,10 @@ colors['hex']['ansi_enum'] = {ansi_alias[k]: v for k,
 
 
 for kname in colors['hex'].keys():
-    colors['8bit_hex'][kname] = {
+    colors['8bit_apporx_hex'][kname] = {
         k: [*approx_ansi(v), v] for k, v in colors['hex'][kname].items()}
     colors['8bit'][kname] = {k: v[0]
-                             for k, v in colors['8bit_hex'][kname].items()}
+                             for k, v in colors['8bit_apporx_hex'][kname].items()}
 
 
 with open('colors.json', 'w') as f:

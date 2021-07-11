@@ -13,6 +13,13 @@ import re
 import json
 import argparse
 source_pattern = '({\s*%\s+((source)\s+([-./\w]+)|((\w+\.)*\w+))})'
+"""
+two supported template semantics
+{% source ./colors.json}
+    load datasource
+{% hex.ansi.red}
+    replaced with actual color
+"""
 
 
 class HybridDataSource(UserDict):
