@@ -44,8 +44,12 @@ def hex_to_hsl(hex_literal):
     pass
 
 
-def color_mix(c1, c2, format='mix'):
-    raise NotImplementedError
+def color_mix(hex1, hex2, weight):
+    c1 = Color(hex=hex1).rgb
+    c2 = Color(hex=hex2).rgb
+    mixed = [int(a1 * weight + a2 * (1-weight)) for a1, a2 in zip(c1, c2)]
+    return Color(rgb=mixed).hex
+
 
 def color_distance(hex1, hex2):
     # ref: https://en.wikipedia.org/wiki/Color_difference#sRGB
