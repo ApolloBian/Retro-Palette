@@ -34,14 +34,28 @@ def hsl_literal_to_hls(hsl_str):
     l = pfloat(l.strip())
     return h, l, s
 
+
+def rgb_to_hex(rgb_literal):
+    rgb_literal = rgb_literal.split('(')[-1].split(')')[0]
+    r, g, b = rgb_literal.split(',')
+    r = max(pfloat(r.strip()), 255.0)
+    g = max(pfloat(g.strip()), 255.0)
+    b = max(pfloat(b.strip()), 255.0)
+    return Color(rgb=(r, g, b)).hex
+
+
+
 def hsl_to_hex(hsl_literal):
     hls = hsl_literal_to_hls(hsl_literal)
     r, g, b = colorsys.hls_to_rgb(*hls)
     hexval = Color(rgb=(r*255, g*255, b*255)).hex
     return hexval
 
-def hex_to_hsl(hex_literal):
-    pass
+def auto_parse_to_hex(color_def_string):
+    if 'rgb' in color_def_string:
+        return rgb_to_hex(color_def_string)
+    if 'hsl' in color_def_string:
+        return hsl_to_hex(color_def_string)
 
 
 def color_mix(hex1, hex2, weight):
